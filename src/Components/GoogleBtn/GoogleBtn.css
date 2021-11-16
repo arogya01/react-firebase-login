@@ -1,0 +1,18 @@
+.google-signin-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #60C065;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    cursor: pointer;
+    margin: 1.5rem 0;
+    font-weight: bold;
+}
+
+.google-icon{
+    margin-right: 0.5rem;
+    width: 16px;
+    height: 16px;
+}
