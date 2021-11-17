@@ -2,6 +2,8 @@ import React from 'react';
 import './signup.css';
 import arrow from '../../Assets/Arrow.svg';
 import { GoogleBtn } from '../../Components/GoogleBtn/GoogleBtn';
+import handleAuth from './handleAuth';
+import { ModalPopup } from '../../Components/utils/ModalPopup';
 
 const SignUp = () => {
     return (
@@ -25,7 +27,10 @@ const SignUp = () => {
             <input type="checkbox" id='input-checkbox' />
             <label htmlFor="input-checkbox" >Agree to the terms & Services </label>
             </div>
-            <button type='submit' className="submit-btn-wrapper">
+            <button type='submit' className="submit-btn-wrapper" onClick={()=>{
+                <ModalPopup />
+                handleAuth();
+            }}>
                     <span>Sign Up</span>
                     <img src={arrow} alt='arrow' className='submit-icon' />
             </button>
